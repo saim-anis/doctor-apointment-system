@@ -5,17 +5,38 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Doctors from "./Pages/Doctors";
-import Login from "./Pages/Login";
 import MyProfile from "./Pages/MyProfile";
-import Appointments from "./Pages/Appointments";
+import Appointment from "./Pages/Appointment";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 
 
+
+// -----------firebase login check---------------
+// import { useEffect, useState } from "react";
+// import { auth } from "./firebase";
+// import { onAuthStateChanged } from "firebase/auth";
+
+
+
+
+// ----------end-------------
+
+
+
+
+
+
+
+
 function App() {
  
+
+
+
+
   return (
    <div className="mx-4 sm:mx-[10%]">
   <Navbar />
@@ -26,10 +47,12 @@ function App() {
     <Route path="/about" element={<About/>} />
     <Route path="/contact" element={<Contact/>} />
     <Route path="/doctors/:speciality" element={<Doctors/>} />
-    <Route path="/login" element={<Login/>} />
-    {/* <Route path="/my-appointments" element={<MyAppointments/>} /> */}
-    <Route path="/appointments/docId" element={<Appointments/>} />
+    <Route path="/doctors" element={<Doctors/>} />
+    {/* <Route path="/login" element={<Login/>} />
+    <Route path="/signup" element={<Signup/>} /> */}
+    <Route path="/appointment/:docId" element={<Appointment/>} />
     <Route path="/my-profile" element={<MyProfile/>} />
+    {/* <Route path="/my-appointments" element={<MyAppointments/>} /> */}
     
   </Routes>
   <Footer/>

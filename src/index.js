@@ -7,7 +7,9 @@ import AppContextProvider from "./context/AppContext.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
   <AppContextProvider>
+    {/* <AuthProvider> */} 
     <App />
+    {/* </AuthProvider> */}
     </AppContextProvider>
     </BrowserRouter>
   

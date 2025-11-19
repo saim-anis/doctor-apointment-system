@@ -9,7 +9,7 @@ import '../index.css'
 
 function SpecialityMenu() {
  
-  const { speciality } = useParams(); // You can use this in a Doctors page later
+  const { speciality } = useParams(); 
 
   return (
     <div id='speciality' className='flex flex-col items-center gap-4 py-16 text-gray-800'>
@@ -23,7 +23,7 @@ function SpecialityMenu() {
         {specialityData.map((item, index) => (
           <Link
             key={index}
-            to={`/doctors/${item.speciality}`} // <-- use backticks if needed for complex paths
+            to={`/doctors/${item.speciality}`}
             className='flex flex-col items-center text-xs cursor-pointer flex-shrink-0 hover:translate-y-[-10px] transition-all duration-400'
           >
             <img src={item.image} alt={item.speciality} className='w-16 sm:w-24 mb-2' />

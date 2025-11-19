@@ -1,7 +1,7 @@
 import React from "react";
 import { doctorsData } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
-import Appointments from "../Pages/Appointments";
+import Appointment from "../Pages/Appointment";
 
 function TopDoctors() {
   const navigate = useNavigate();
@@ -15,7 +15,7 @@ function TopDoctors() {
 
       <div className="grid grid-cols-auto w-full gap-4 gap-y-6 pt-5  px-3 sm:px-0">
         {doctorsData.slice(0, 10).map((item, index) => (
-          <div onClick={() => navigate(`/appointments/${item.id}`)}
+          <div onClick={() => navigate(`/appointment/${item.id}`)}
             className=" bg-blue-50 border border-blue-200 rounded-xl cursor-pointer hover:rotate-1 transition-all duration-400 shadow-blue-900"
             key={index}
           >

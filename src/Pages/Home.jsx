@@ -4,9 +4,11 @@ import SpecialityMenu from '../components/SpecialityMenu'
 import TopDoctors from '../components/TopDoctors'
 import Banner from '../components/Banner'
 
+
 function Home() {
   return (
     <div>
+       
       <Hero />
       <SpecialityMenu />
       <TopDoctors/>

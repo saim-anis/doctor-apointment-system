@@ -5,6 +5,7 @@ import { Navigate, NavLink, useNavigate } from "react-router-dom";
 import NavbarUser from '../assets/Testimonial-person-1.webp'
 
 
+
 function Navbar() {
   const navigate = useNavigate();
   const [showMenu,setShowMenu] = useState(false)
@@ -25,14 +26,19 @@ const [token, setToken] = useState(true)
           <li  py-1>Home</li>
           <hr className="border-none outline-none h-0.5 bg-blue-500 w-3/5 m-auto hidden" />
         </NavLink>
-        <NavLink to="/doctors/:speciality">
+        <NavLink to="/doctors">
           <li py-1>Doctors</li>
+          <hr className="border-none outline-none h-0.5 bg-blue-500 w-3/5 m-auto hidden" />
+        </NavLink>
+        <NavLink to="/appointment">
+          <li py-1>Appointment</li>
           <hr className="border-none outline-none h-0.5 bg-blue-500 w-3/5 m-auto hidden" />
         </NavLink>
         <NavLink to="/about">
           <li py-1>About</li>
           <hr className="border-none outline-none h-0.5 bg-blue-500 w-3/5 m-auto hidden" />
         </NavLink>
+        
         <NavLink to="/contact">
           <li py-1>Contact</li>
           <hr className="border-none outline-none h-0.5 bg-blue-500 w-3/5 m-auto hidden"  />
@@ -49,8 +55,16 @@ const [token, setToken] = useState(true)
         <div className="absolute top-0 right-0 pt-14 text-base font-medium text-gray-600 z-20 hidden group-hover:block">
           <div className="min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4 ">
             <p onClick={()=>navigate('my-profile')} className="hover:text-black cursor-pointer">My Profile</p>
-            <p onClick={()=>navigate('my-appointments')} className="hover:text-black cursor-pointer">Appointments</p>
-            <p onClick={()=>setToken(false)} className="hover:text-black cursor-pointer">Logout</p>
+           
+           
+            <p  onClick={() => {
+    setToken(false)
+   
+  }} className="hover:text-black cursor-pointer">Logout</p>
+
+
+
+
           </div>
         </div>
     </div>:

@@ -1,3 +1,4 @@
 Tailwind     Installed
 React-router Installed
 Font Awesome installed
+Firebase Installed
