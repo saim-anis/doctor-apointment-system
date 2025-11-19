@@ -1,4 +1,4 @@
-import { faAngleDown, faArrowDownShortWide, faHouseMedical } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faArrowDownShortWide, faBars, faHouseMedical } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Navigate, NavLink, useNavigate } from "react-router-dom";
@@ -10,6 +10,10 @@ function Navbar() {
   const navigate = useNavigate();
   const [showMenu,setShowMenu] = useState(false)
 const [token, setToken] = useState(true)
+const [menu,setMenu] = useState(false)
+
+
+
 
   return (
     <div className="flex items-center justify-between  py-4 mb-5 border-b border-b-blue-500 ">
@@ -20,7 +24,7 @@ const [token, setToken] = useState(true)
         } className="mt-3 bg-blue-500 p-2 rounded text-white" />
         <h1 className="italic text-2xl font-bold mt-3">Lifeline</h1>
       </div></NavLink>
-      <ul className="flex gap-9 text-1xl font-medium">
+      <ul className="flex gap-9 text-1xl font-medium sm:flex hidden">
 
         <NavLink to="/">
           <li  py-1>Home</li>
@@ -66,11 +70,15 @@ const [token, setToken] = useState(true)
 
 
           </div>
+          
         </div>
     </div>:
      <button onClick={()=>navigate('./login')} className="bg-blue-500 p-3 rounded-3xl  text-[#fff] hover:bg-blue-700">Create Account</button>
   }
-
+  <span>
+ <FontAwesomeIcon icon={faBars 
+        } className="mt-3 block sm:hidden" />
+        </span>
 </div>
 
      
