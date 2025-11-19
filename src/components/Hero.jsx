@@ -8,7 +8,7 @@ function Hero() {
   const navigate = useNavigate();
 
   return (
-    <section className="relative min-h-screen flex flex-col lg:flex-row  py-12 bg-white overflow-hidden">
+    <section className="relative flex flex-col lg:flex-row  py-12 bg-white overflow-hidden">
       
       {/* LEFT CONTENT */}
       <div className="mr-3 flex-1 space-y-6 text-center lg:text-start z-10">
