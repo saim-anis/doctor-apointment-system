@@ -80,57 +80,50 @@ const [menu,setMenu] = useState(false)
     </div>:
      <button onClick={()=>navigate('./login')} className="bg-blue-500 p-3 rounded-3xl  text-[#fff] hover:bg-blue-700">Create Account</button>
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
  <span onClick={() => setMenu(true)}>
  <FontAwesomeIcon icon={faBars 
         } className="mt-3 block sm:flex  lg:hidden" />
         </span>
  
-        {menu && (
+
+
+
+ {/* -------Mobile sidebar menu-------- */}
+        {menu ? 
           
           <div className="fixed top-0 bottom-0 left-0 w-[100vw] h-[100vh] bg-white shadow shadow-black/100 bg-opacity-100 z-50 flex flex-col text-center">
-         <ul className=" flex flex-col  gap-9  font-medium mt-36 text-3xl " >
+         <ul className=" flex flex-col  gap-9  font-medium mt-36 text-3xl" onClick={() => setMenu(false)} >
  <span onClick={() => setMenu(false)}>
  <FontAwesomeIcon icon={faBars 
         }  />
         </span>
         <NavLink to="/">
           <li  py-1>Home</li>
-        
+          <hr className="border-none outline-none h-0.5 bg-blue-500 w-8 m-auto hidden" />
         </NavLink>
         <NavLink to="/doctors">
           <li py-1>Doctors</li>
-          <hr className="border-none outline-none h-0.5 bg-blue-500 w-3/5 m-auto hidden" />
+          <hr className="border-none outline-none h-0.5 bg-blue-500 w-8 m-auto hidden" />
         </NavLink>
         <NavLink to="/appointment">
           <li py-1>Appointment</li>
-          <hr className="border-none outline-none h-0.5 bg-blue-500 w-3/5 m-auto hidden" />
+           <hr className="border-none outline-none h-0.5 bg-blue-500 w-8 m-auto hidden" />
         </NavLink>
         <NavLink to="/about">
           <li py-1>About</li>
-          <hr className="border-none outline-none h-0.5 bg-blue-500 w-3/5 m-auto hidden" />
+           <hr className="border-none outline-none h-0.5 bg-blue-500 w-8 m-auto hidden" />
         </NavLink>
         
         <NavLink to="/contact">
           <li py-1>Contact</li>
-          <hr className="border-none outline-none h-0.5 bg-blue-500 w-3/5 m-auto hidden"  />
+          <hr className="border-none outline-none h-0.5 bg-blue-500 w-8 m-auto hidden" />
         </NavLink>
 
       </ul>
       </div>
-      )}
+      : null}
+
+      {/* -------Mobile sidebar menu end-------- */}
 </div>
 
      
