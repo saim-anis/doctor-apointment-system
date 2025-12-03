@@ -3,15 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Navigate, NavLink, useNavigate } from "react-router-dom";
 import NavbarUser from '../assets/Testimonial-person-1.webp'
-
+import { auth } from "../firebase";
+import {logout} from '../auth'
 
 
 function Navbar() {
+
+
+
+
   const navigate = useNavigate();
   const [showMenu,setShowMenu] = useState(false)
 const [token, setToken] = useState(true)
 const [menu,setMenu] = useState(false)
-
 
 
 
@@ -65,11 +69,16 @@ const [menu,setMenu] = useState(false)
           <div className="min-w-48 bg-stone-100 rounded flex flex-col gap-4 p-4 ">
             <p onClick={()=>navigate('my-profile')} className="hover:text-black cursor-pointer">My Profile</p>
            
-           
-            <p  onClick={() => {
-    setToken(false)
-   
-  }} className="hover:text-black cursor-pointer">Logout</p>
+           <p
+  onClick={() => {
+  logout(auth);     
+  setToken(false); 
+  navigate('/login'); 
+}}
+  className="hover:text-black cursor-pointer transition-all duration-700"
+>
+  Logout
+</p>
 
 
 
@@ -78,7 +87,7 @@ const [menu,setMenu] = useState(false)
           
         </div>
     </div>:
-     <button onClick={()=>navigate('./login')} className="bg-blue-500 p-3 rounded-3xl  text-[#fff] hover:bg-blue-700">Create Account</button>
+     <button onClick={()=>navigate('./signup')} className="bg-blue-500 p-3 rounded-3xl  text-[#fff] hover:bg-blue-700">Create Account</button>
   }
  <span onClick={() => setMenu(true)}>
  <FontAwesomeIcon icon={faBars 

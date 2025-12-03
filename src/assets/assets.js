@@ -60,6 +60,8 @@ export const doctorsData = [
     speciality: "Cardiologist",
     degree: "MBBS, FCPS (Cardiology)",
     about: "10+ years of experience in treating heart diseases. Specialist in ECG, angiography, and heart failure management. Known for her calm, patient-centered approach.",
+    experience: "10+ years",
+    fees: "$50",
     image: DrSarah,
   },
   {
@@ -67,7 +69,9 @@ export const doctorsData = [
     name: "Dr. Ali Khan",
     speciality: "Neurologist",
     degree: "MBBS, FCPS (Neurology)",
-    about: "12+ years of experience in brain and nerve disorders. Expert in migraines, seizures, and neuropathy. Focuses on accurate diagnosis with advanced neuro testing.",
+    about: "2+ years of experience in brain and nerve disorders. Expert in migraines, seizures, and neuropathy. Focuses on accurate diagnosis with advanced neuro testing.",
+    experience: "2+ years",
+    fees: "$50",
     image: DrAli,
   },
   {
@@ -76,6 +80,8 @@ export const doctorsData = [
     speciality: "General-Physician",
     degree: "MBBS, MD (Internal Medicine)",
     about: "Expert in routine checkups and chronic illness care. Provides preventive and primary healthcare. Known for friendly, detailed patient guidance.",
+    experience: "7 years",
+    fees: "$70",
     image: DrHamza,
   },
   {
@@ -83,7 +89,9 @@ export const doctorsData = [
     name: "Dr. Maryam Saleem",
     speciality: "Orthopedic",
     degree: "MBBS, MS (Orthopedics)",
-    about: "8+ years of experience in bone and joint care. Specialist in fractures, arthritis, and sports injuries. Provides personalized recovery plans.",
+    about: "4+ years of experience in bone and joint care. Specialist in fractures, arthritis, and sports injuries. Provides personalized recovery plans.",
+    experience: "4+ years",
+    fees: "$100",
     image: DrMaryam,
   },
   {
@@ -92,6 +100,8 @@ export const doctorsData = [
     speciality: "Gasterologist",
     degree: "MBBS, FCPS (Gastroenterology)",
     about: "Expert in stomach and liver diseases with 11+ years of experience. Skilled in endoscopy, hepatitis, and gastric disorders. Known for clear and effective consultations.",
+    experience: "11+ years",
+    fees: "$40",
     image: DrHassan,
   },
 
@@ -102,6 +112,8 @@ export const doctorsData = [
     speciality: "Dermatologist",
     degree: "MBBS, MD (Dermatology)",
     about: "Specialist in skin, hair, and nail treatments. 9+ years of experience in acne, pigmentation, and cosmetic dermatology. Provides safe and effective skin solutions.",
+    experience: "9+ years",
+    fees: "$50",
     image: DrAyesha,
   },
   {
@@ -110,6 +122,8 @@ export const doctorsData = [
     speciality: "Pediatrician",
     degree: "MBBS, FCPS (Pediatrics)",
     about: "Expert in child health with 10+ years of experience. Handles newborn to teen medical care. Known for gentle and caring treatment for kids.",
+    experience: "10+ years",
+    fees: "$150",
     image: DrUsman,
   },
   {
@@ -118,6 +132,8 @@ export const doctorsData = [
     speciality: "Gynaecologist",
     degree: "MBBS, FCPS (Gyneacology & Obstetrics)",
     about: "Experienced in women health, pregnancy care, and fertility. 8+ years of practice helping women with safe guidance. Known for supportive, respectful care.",
+    experience: "8+ years",
+    fees: "$250",
     image: DrZainab,
   },
   {
@@ -126,6 +142,8 @@ export const doctorsData = [
     speciality: "ENT Specialist",
     degree: "MBBS, FCPS (ENT)",
     about: "Specialist in ear, nose, and throat treatments. 9+ years of experience in sinus issues, throat infections, and hearing problems. Provides accurate and quick relief.",
+    experience: "9+ years",
+    fees: "$20",
     image: DrBilal,
   },
 
@@ -148,6 +166,8 @@ export const doctorsData = [
   speciality: "Neurologist",
   degree: "MBBS, FCPS (Neurology)",
   about: "Expert in treating brain and nerve-related disorders. Skilled in managing migraines, strokes, and neuropathy. Known for her careful evaluation and patient-friendly behavior.",
+  experience: "1 year",
+  fees: "$10",
   image: DrNoor,
 },
 

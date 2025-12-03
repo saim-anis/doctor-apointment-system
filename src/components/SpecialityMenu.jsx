@@ -27,7 +27,9 @@ function SpecialityMenu() {
             className='flex flex-col items-center text-xs cursor-pointer flex-shrink-0 hover:translate-y-[-10px] transition-all duration-400'
           >
             <img src={item.image} alt={item.speciality} className='w-16 sm:w-24 mb-2' />
-            <p>{item.speciality}</p>
+            <p>{item.speciality}
+              
+            </p>
            
           </Link>
           
