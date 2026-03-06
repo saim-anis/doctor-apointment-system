@@ -12,6 +12,8 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Signup from "./Pages/Signup"
 import Login from "./Pages/Login";
+import Pricing from "./Pages/Pricing";
+import Notfound from "./Pages/Notfound"
 
 
 function App() {
@@ -31,6 +33,9 @@ function App() {
     <Route path="/my-profile" element={<MyProfile/>} />
      <Route path="/login" element={<Login/>} />
      <Route path="/signup" element={<Signup/>} />
+     <Route path="/pricing" element={<Pricing/>} />
+      <Route path="*" element={<Notfound />} />
+     
     {/* <Route path="/my-appointments" element={<MyAppointments/>} /> */}
   </Routes>
   <Footer/>
