@@ -14,7 +14,7 @@ import Signup from "./Pages/Signup"
 import Login from "./Pages/Login";
 import Pricing from "./Pages/Pricing";
 import Notfound from "./Pages/Notfound"
-
+import Blog from "./Pages/Blog"
 
 function App() {
  
@@ -35,6 +35,7 @@ function App() {
      <Route path="/signup" element={<Signup/>} />
      <Route path="/pricing" element={<Pricing/>} />
       <Route path="*" element={<Notfound />} />
+         <Route path="/blog" element={<Blog/>} />
      
     {/* <Route path="/my-appointments" element={<MyAppointments/>} /> */}
   </Routes>
